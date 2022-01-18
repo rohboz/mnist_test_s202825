@@ -1,0 +1,5 @@
+#conf_train_model.yaml
+hyperparameters:
+ batch_size: 64
+ epochs: 20
+ lr: 1e-3
