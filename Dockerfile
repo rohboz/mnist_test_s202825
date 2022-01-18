@@ -12,8 +12,10 @@ COPY src/ src/
 COPY .dvcignore .dvcignore
 COPY .dvc/ .dvc/
 COPY data.dvc data.dvc
+COPY reports/ reports/
 
 WORKDIR /
 RUN pip install -r requirements.txt --no-cache-dir
+RUN dvc config core.no_scm true
 
-ENTRYPOINT dvc pull && python -u src/models/train_model.py
+ENTRYPOINT dvc pull && python -u src/models/docker_train_test.py
