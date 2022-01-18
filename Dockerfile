@@ -15,6 +15,7 @@ COPY data.dvc data.dvc
 COPY reports/ reports/
 
 WORKDIR /
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt --no-cache-dir
 RUN dvc config core.no_scm true
 

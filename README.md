@@ -15,6 +15,8 @@ To use trained model for prediction run:
 Build dockerimage to run training-pipeline:
 -- docker build -f trainer.dockerfile . -t trainer:latest --no-cache
 
+  
+---
 Project Organization
 ------------
 
