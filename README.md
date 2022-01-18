@@ -2,18 +2,18 @@ MNIST 02476
 ==============================
 
 
-To fulfill the dependencies run:
--- pip install -r requirements.txt
-To process data raw data run:
--- python src\data\make_dataset.py data\raw\corruptmnist data\processed
-Or access data through from dvc:
--- dvc pull
-To train model and generate training run png run:
--- python src\models\train_model.py
-To use trained model for prediction run:
--- python src\models\predict_model.py models\trained_models\model.pt data\processed\testset.pt
-Build dockerimage to run training-pipeline:
--- docker build -f trainer.dockerfile . -t trainer:latest --no-cache
+To fulfill the dependencies run: \
+-- pip install -r requirements.txt \
+To process data raw data run: \
+-- python src\\data\\make_dataset.py data\\raw\\corruptmnist data\\processed \
+Or access data through from dvc: \
+-- dvc pull \
+To train model and generate training run png run: \
+-- python src\\models\\train_model.py \
+To use trained model for prediction run: \
+-- python src\\models\\predict_model.py models\\trained_models\\model.pt data\\processed\\testset.pt \
+Build dockerimage to run training-pipeline: \
+-- docker build -f trainer.dockerfile . -t trainer:latest --no-cache \
 
   
 ---
