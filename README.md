@@ -4,7 +4,7 @@ To fulfill the dependencies run: pip install -r requirements.txt
 To process data raw data run: python src\data\make_dataset.py data\raw\corruptmnist data\processed
 To train model and print training-image run:
 To use trained model for prediction run: python src\models\predict_model.py models\trained_models\model.pt data\processed\testset.pt
-
+Build dockerimage to run training-pipeline
 Project Organization
 ------------
 
